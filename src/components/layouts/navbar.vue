@@ -1,27 +1,24 @@
 <template>
     <div>
-        <nav class="px-4 py-4 bg-white">
+        <nav class="px-[54px] py-[29px] bg-white h-[100px]">
             <!-- Top Row: Logo on left and icons on right -->
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between ">
                 <!-- Logo -->
-                <router-link to="/" class="flex jsutify-center items-center space-x-0.5">
-                    <img src="@/assets/main-logo.svg" class="w-6 h-5 sm:h-5 sm:w-8 md:w-12 md:h-8" alt="main-logo">
-                    <p class="font-bold text-base sm:text-lg md:text-[34px] font-montserrat">Furniro</p>
+                <router-link to="/" class="flex jsutify-center items-center space-s-0.5">
+                    <img src="@/assets/main-logo.svg" class="w-[50px] h-8 " alt="main-logo">
+                    <p class="font-bold text-[34px] font-montserrat">Furniro</p>
                 </router-link>
 
-                <div class="justify-center hidden space-x-6 md:flex">
-                    <router-link to=""
-                        class="text-base font-medium text-gray-400 hover:text-gray-500">Home</router-link>
-                    <router-link to=""
-                        class="text-base font-medium text-gray-400 hover:text-gray-500">Shop</router-link>
-                    <router-link to=""
-                        class="text-base font-medium text-gray-400 hover:text-gray-500">About</router-link>
-                    <router-link to=""
-                        class="text-base font-medium text-gray-400 hover:text-gray-500">Contact</router-link>
+                <div
+                    class="justify-center hidden text-gray-900 space-s-6 font-500 md:flex font-poppins hover:text-gray-700">
+                    <router-link to="" class="text-base">Home</router-link>
+                    <router-link to="" class="text-base">Shop</router-link>
+                    <router-link to="" class="text-base">About</router-link>
+                    <router-link to="" class="text-base">Contact</router-link>
                 </div>
 
                 <!-- Icons Group: visible on all screens (you can hide the burger on small screens if not needed) -->
-                <div class="flex items-center space-x-2.5">
+                <div class="flex items-center space-s-2.5">
                     <router-link to="" class="bg-gray-50 hover:bg-gray-100">
                         <iconify-icon icon="heroicons-outline:user"
                             class="text-lg sm:text-xl md:text-[26px]"></iconify-icon>
@@ -42,11 +39,12 @@
             </div>
 
             <!-- Bottom Row: Router Links (only on small screens) -->
-            <div class="mt-2.5 flex justify-center space-x-6 md:hidden">
-                <router-link to="" class="text-base font-medium text-gray-400 hover:text-gray-500">Home</router-link>
-                <router-link to="" class="text-base font-medium text-gray-400 hover:text-gray-500">Shop</router-link>
-                <router-link to="" class="text-base font-medium text-gray-400 hover:text-gray-500">About</router-link>
-                <router-link to="" class="text-base font-medium text-gray-400 hover:text-gray-500">Contact</router-link>
+            <div
+                class="mt-2.5 flex justify-center text-gray-900 space-s-6 font-500 font-poppins hover:text-gray-700 md:hidden">
+                <router-link to="" class="text-base">Home</router-link>
+                <router-link to="" class="text-base">Shop</router-link>
+                <router-link to="" class="text-base">About</router-link>
+                <router-link to="" class="text-base">Contact</router-link>
             </div>
         </nav>
     </div>
