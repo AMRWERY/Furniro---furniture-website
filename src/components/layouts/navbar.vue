@@ -1,15 +1,15 @@
 <template>
     <div>
-        <nav class="bg-white px-4 py-4">
+        <nav class="px-4 py-4 bg-white">
             <!-- Top Row: Logo on left and icons on right -->
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <router-link to="/" class="flex jsutify-center items-center space-x-0.5">
                     <img src="@/assets/main-logo.svg" class="w-6 h-5 sm:h-5 sm:w-8 md:w-12 md:h-8" alt="main-logo">
-                    <p class="font-bold text-base sm:text-lg md:text-[34px] font-[poppins]">Furniro</p>
+                    <p class="font-bold text-base sm:text-lg md:text-[34px] font-montserrat">Furniro</p>
                 </router-link>
 
-                <div class="md:flex justify-center space-x-6 hidden">
+                <div class="justify-center hidden space-x-6 md:flex">
                     <router-link to=""
                         class="text-base font-medium text-gray-400 hover:text-gray-500">Home</router-link>
                     <router-link to=""

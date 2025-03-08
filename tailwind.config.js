@@ -5,17 +5,18 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       fontWeight: {
-        100: "100",
-        200: "200",
-        300: "300",
-        400: "400",
-        500: "500",
-        600: "600",
-        700: "700",
-        800: "800",
-        900: "900",
+        100: "100", //font-thin
+        200: "200", //font-extralight
+        300: "300", //font-light
+        400: "400", //font-normal
+        500: "500", //font-medium
+        600: "600", //font-semibold
+        700: "700", //font-bold
+        800: "800", //ont-extrabold
+        900: "900", //font-black
       },
     },
   },
