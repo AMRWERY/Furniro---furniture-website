@@ -8,7 +8,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       fontWeight: {
-        100: "100", //font-thin
+        100: "100", //font-thin 
         200: "200", //font-extralight
         300: "300", //font-light
         400: "400", //font-normal
