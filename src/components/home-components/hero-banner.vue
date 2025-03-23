@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="pb-6 bg-white sm:pb-8 lg:pb-12">
+        <div class="bg-white">
             <section
                 class="relative flex items-center justify-center flex-1 py-16 overflow-hidden bg-gray-100 md:justify-end min-h-96 shrink-0 md:py-20 xl:py-48">
                 <img src="https://justfields.com/storage/projects/7M5rV059/hero-section-banner.png" loading="lazy"

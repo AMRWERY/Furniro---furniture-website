@@ -1,13 +1,12 @@
 <template>
     <div>
-        <div class="px-4 mt-[56.74px] mb-[56px] mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="px-4 sm:mt-[40.17px] md:mt-[52.17px] sm:mb-[43px] md:mb-[56px] mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="font-700 font-poppins text-[20px] sm:text-[24px] md:text-[32px] text-[#333333]">Browse The
                     Range</p>
                 <span class="text-[#666666] text-sm sm:text-base md:text-xl font-400 font-poppins">Lorem ipsum dolor sit
                     amet,
                     consectetur adipiscing elit.</span>
-
                 <div
                     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-[30px] sm:mt-[44px] md:mt-[62.29px] gap-x-6 gap-y-10 xl:gap-x-8">
                     <div v-for="card in cards" :key="card.id" class="relative group">
