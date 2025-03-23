@@ -11,14 +11,34 @@
 
                 <div
                     class="justify-center hidden text-gray-900 space-s-6 font-500 lg:flex font-poppins hover:text-gray-700">
-                    <router-link to="" class="text-base">Home</router-link>
-                    <router-link to="" class="text-base">Shop</router-link>
-                    <router-link to="" class="text-base">About</router-link>
-                    <router-link to="" class="text-base">Contact</router-link>
+                    <router-link to=""
+                        class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                        <p class="relative z-10">Home</p>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                    </router-link>
+                    <router-link to=""
+                        class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                        <p class="relative z-10">Shop</p>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                    </router-link>
+                    <router-link to=""
+                        class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                        <p class="relative z-10">About</p>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                    </router-link>
+                    <router-link to=""
+                        class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                        <p class="relative z-10">Contact</p>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                    </router-link>
                 </div>
 
                 <!-- Icons Group: visible on all screens (you can hide the burger on small screens if not needed) -->
-                <div class="flex items-center space-s-4">
+                <div class="flex items-center space-s-1 md:space-s-4">
                     <router-link to="" class="p-1 rounded-full bg-gray-50 hover:bg-gray-100">
                         <iconify-icon icon="heroicons-outline:user"
                             class="sm:text-[20px] md:text-[25px]"></iconify-icon>
@@ -50,16 +70,36 @@
                     </button>
                     <ul class="flex flex-col p-4 space-y-4">
                         <li>
-                            <router-link to="" @click.native="toggleSidebar" class="text-base">Home</router-link>
+                            <router-link to="" @click.native="toggleSidebar"
+                                class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                                <p class="relative z-10">Home</p>
+                                <span
+                                    class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                            </router-link>
                         </li>
                         <li>
-                            <router-link to="" @click.native="toggleSidebar" class="text-base">Shop</router-link>
+                            <router-link to="" @click.native="toggleSidebar"
+                                class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                                <p class="relative z-10">Shop</p>
+                                <span
+                                    class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                            </router-link>
                         </li>
                         <li>
-                            <router-link to="" @click.native="toggleSidebar" class="text-base">About</router-link>
+                            <router-link to="" @click.native="toggleSidebar"
+                                class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                                <p class="relative z-10">About</p>
+                                <span
+                                    class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                            </router-link>
                         </li>
                         <li>
-                            <router-link to="" @click.native="toggleSidebar" class="text-base">Contact</router-link>
+                            <router-link to="" @click.native="toggleSidebar"
+                                class="relative inline-block pb-1 text-base transition-colors duration-300 group hover:text-blue-600">
+                                <p class="relative z-10">Contact</p>
+                                <span
+                                    class="absolute bottom-0 left-0 h-0.5 bg-current w-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
