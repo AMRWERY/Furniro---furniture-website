@@ -1,12 +1,12 @@
 <template>
     <div>
-        <nav class="px-4 py-[29px] sm:px-10 md:px-[54px] bg-white h-[100px] relative">
+        <nav class="flex bg-white h-[50xpx] md:h-[100px] relative">
             <!-- Top Row: Logo on left and icons on right -->
-            <div class="flex items-center justify-between">
+            <div class="container flex items-center justify-between px-4 sm:px-10 md:px-[54px]">
                 <!-- Logo -->
                 <router-link to="/" class="flex jsutify-center items-center space-s-0.5">
-                    <img src="@/assets/main-logo.svg" class="w-[50px] h-8 " alt="main-logo">
-                    <p class="font-bold text-[34px] font-montserrat">Furniro</p>
+                    <img src="@/assets/main-logo.svg" class="md:w-[50px] md:h-8 w-8 h-6" alt="main-logo">
+                    <p class="font-bold md:text-[34px] font-montserrat sm:text-[25px]">Furniro</p>
                 </router-link>
 
                 <div
@@ -19,30 +19,34 @@
 
                 <!-- Icons Group: visible on all screens (you can hide the burger on small screens if not needed) -->
                 <div class="flex items-center space-s-4">
-                    <router-link to="" class="bg-gray-50 hover:bg-gray-100">
-                        <iconify-icon icon="heroicons-outline:user" width="28" height="28"></iconify-icon>
+                    <router-link to="" class="p-1 rounded-full bg-gray-50 hover:bg-gray-100">
+                        <iconify-icon icon="heroicons-outline:user"
+                            class="sm:text-[20px] md:text-[25px]"></iconify-icon>
                     </router-link>
-                    <router-link to="" class="bg-gray-50 hover:bg-gray-100">
-                        <iconify-icon icon="heroicons-outline:search" width="28" height="28"></iconify-icon>
+                    <router-link to="" class="p-1 rounded-full bg-gray-50 hover:bg-gray-100">
+                        <iconify-icon icon="heroicons-outline:search"
+                            class="sm:text-[20px] md:text-[25px]"></iconify-icon>
                     </router-link>
-                    <router-link to="" class="bg-gray-50 hover:bg-gray-100">
-                        <iconify-icon icon="heroicons-outline:heart" width="28" height="28"></iconify-icon>
+                    <router-link to="" class="p-1 rounded-full bg-gray-50 hover:bg-gray-100">
+                        <iconify-icon icon="heroicons-outline:heart"
+                            class="sm:text-[20px] md:text-[25px]"></iconify-icon>
                     </router-link>
-                    <router-link to="" class="bg-gray-50 hover:bg-gray-100">
-                        <iconify-icon icon="heroicons-outline:shopping-bag" width="28" height="28"></iconify-icon>
+                    <router-link to="" class="p-1 rounded-full bg-gray-50 hover:bg-gray-100">
+                        <iconify-icon icon="heroicons-outline:shopping-bag"
+                            class="sm:text-[20px] md:text-[25px]"></iconify-icon>
                     </router-link>
-                    <button @click="toggleSidebar" class="p-2 lg:hidden">
-                        <iconify-icon icon="tabler:menu-deep" width="28" height="28"></iconify-icon>
+                    <button @click="toggleSidebar" class="p-1 rounded-full bg-gray-50 hover:bg-gray-100 lg:hidden">
+                        <iconify-icon icon="tabler:menu-deep" class="sm:text-[20px] md:text-[25px]"></iconify-icon>
                     </button>
                 </div>
-
             </div>
 
             <transition name="slide">
                 <div v-if="sidebarOpen" class="fixed z-50 bg-white shadow-lg" :class="sidebarClasses"
                     @click.self="toggleSidebar">
                     <button @click="toggleSidebar" class="absolute p-2 top-2 right-2">
-                        <iconify-icon icon="mdi:close" width="24" height="24"></iconify-icon>
+                        <iconify-icon icon="mdi:close"
+                            class="w-[15px] h-[15px] sm:w-[20px] sm:h-[20px] md:w-[28px] md:h-[28px]"></iconify-icon>
                     </button>
                     <ul class="flex flex-col p-4 space-y-4">
                         <li>
